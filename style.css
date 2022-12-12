@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url("img/image.png");
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.menu{
+    background: yellow;
+    text-align: center;
+}
+.menu ul{
+    display: inline-flex;
+    list-style: none;
+    color: #000;
+}
+.menu ul li{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: #000;
+}
+.menu .active, .menu ul li:hover{
+    background: orange;
+    border-radius: 3px;
+
+}
+.menu .fa{
+    margin-right: 4px;
+}
+.submenu1{
+    display: none;
+}
+
+.menu ul li:hover .submenu1{
+    display: block;
+    position: absolute;
+    background: yellow;
+    margin-top: 15px;
+    margin-left: 15px;  
+}
+.menu ul li:hover .submenu1 ul{
+    display: block;
+    margin: 10px;
+}
+.menu ul li:hover .submenu1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted orangered;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.menu ul li:hover .submenu1 ul li:last-child{
+    border-bottom: none;
+}
+.menu ul li:hover .submenu1 ul li a:hover{
+    color: orangered;
+}
+.fa-angle-right{
+    float:right;
+}
+.submenu2{
+    display: none;
+}
+
+.hoverme:hover .submenu2{
+    display: block;
+    position: absolute;
+    background: yellow;
+    margin-top: -40px;
+    margin-left: 160px;  
+}
